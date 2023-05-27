@@ -10,9 +10,10 @@
 
 <body>
 
-  {% include 'header.html' %}
+  {% block header %}{% endblock header %}
   {% block content %}{% endblock content %}
   {% include 'footer.html' %}
+  {% block javascript %}{% endblock javascript %}
 
 </body>
 </html>
